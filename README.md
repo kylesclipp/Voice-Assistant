@@ -1,5 +1,3 @@
-# L_AI
- 
 # Voice Assistant
 
 ## API Key Setup
