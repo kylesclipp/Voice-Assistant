@@ -12,7 +12,7 @@ class GreetCommand(BaseCommand):
 
     def matches(self, text: str) -> bool:
         greet_keywords = ["hello", "hi", "hey", "greetings"]
-        return any(keyword == text.lower().strip() for keyword in greet_keywords)
+        return any(keyword in text.lower() for keyword in greet_keywords)
 
     def execute(self, entities: dict = None) -> str:
         return random.choice(self.greetings)
