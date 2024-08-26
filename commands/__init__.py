@@ -3,6 +3,7 @@ from .greeting_commands import GreetCommand, FarewellCommand
 from .weather_commands import WeatherCommand
 from .gratitude_commands import ThankYouCommand
 from .hue_commands import HueCommand
+from .alarm_commands import AlarmSetCommand, AlarmListCommand
 
 def get_all_commands():
     return [
@@ -12,5 +13,7 @@ def get_all_commands():
         FarewellCommand(),
         WeatherCommand(),
         ThankYouCommand(),
-        HueCommand()
+        HueCommand(),
+        AlarmSetCommand(),
+        AlarmListCommand(),
     ]

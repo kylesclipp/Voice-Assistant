@@ -8,6 +8,5 @@ class TextToSpeech:
         self.engine.setProperty('volume', settings.VOICE_VOLUME)
 
     def speak(self, text):
-        print(f"Assistant: {text}")
         self.engine.say(text)
         self.engine.runAndWait()
